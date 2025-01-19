@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from .attention import CausalSelfAttention
 from .mlp import MLP, Block
-
+import inspect
 
 class GPT(nn.Module):
     def __init__(self, config):
